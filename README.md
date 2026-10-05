@@ -1,9 +1,7 @@
-# Learning Java, Go & DSA
+# Learning Go & DSA
 
 This repository documents my learning journey from absolute basics to
 interview-ready level in:
-
-- Java
 - Go
 - Data Structures & Algorithms
 
