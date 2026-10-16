@@ -106,3 +106,41 @@ Parameters let us reuse one function with different inputs instead of writing a 
 ### Remember
 
 Define the function once. Pass different values whenever you call it.
+## Functions with Multiple Parameters
+
+A parameter is a variable that receives information when a function is called.
+
+A function can accept more than one parameter.
+
+### Example
+
+```go
+func add(a int, b int) {
+    fmt.Println(a + b)
+}
+```
+
+- `add` is the function name.
+- `a` and `b` are parameters.
+- `int` means each parameter accepts a whole number.
+- `fmt.Println(a + b)` adds the two numbers and prints the result.
+
+### Calling the Function
+
+```go
+add(5, 3)
+```
+
+Here, `5` is passed to `a`, and `3` is passed to `b`.
+
+Output:
+
+```text
+8
+```
+
+### Remember
+
+- Parameters are written in the function definition.
+- Arguments are the actual values passed when calling the function.
+- The arguments must match the parameters in order and type.
