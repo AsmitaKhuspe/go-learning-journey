@@ -144,3 +144,72 @@ Output:
 - Parameters are written in the function definition.
 - Arguments are the actual values passed when calling the function.
 - The arguments must match the parameters in order and type.
+
+## Functions with Multiple Return Values
+
+### What does it mean?
+
+A Go function can return more than one value from a single function call.
+
+### Real-Life Analogy
+
+Imagine ordering a combo at a café. One order gives you two items: coffee and a sandwich.
+
+Similarly, one Go function call can give back two results.
+
+### Example
+
+```go
+func getNumbers() (int, int) {
+    return 10, 20
+}
+```
+
+### Understanding the Code
+
+- `func` defines a function.
+- `getNumbers` is the function name.
+- `(int, int)` means the function returns two integer values.
+- `return 10, 20` sends two values back to the caller.
+
+### Receiving the Return Values
+
+```go
+first, second := getNumbers()
+```
+
+- `first` receives `10`.
+- `second` receives `20`.
+- `:=` creates the variables and assigns the returned values to them.
+
+The values are assigned in the same order in which the function returns them.
+
+### Complete Example
+
+```go
+package main
+
+import "fmt"
+
+func getNumbers() (int, int) {
+    return 10, 20
+}
+
+func main() {
+    first, second := getNumbers()
+
+    fmt.Println("First number:", first)
+    fmt.Println("Second number:", second)
+}
+```
+
+### Output
+
+```text
+First number: 10
+Second number: 20
+```
+
+### Remember
+
+One function call can return multiple values, and we can receive those values in separate variables.
