@@ -213,3 +213,29 @@ Second number: 20
 ### Remember
 
 One function call can return multiple values, and we can receive those values in separate variables.
+## Named Return Values
+
+Named return values are variables declared in a function's return section.
+
+### Example
+
+```go
+func getMarks() (marks int) {
+    marks = 95
+    return
+}
+```
+
+### Understanding the Code
+
+- `marks int` declares a named return variable of type `int`.
+- `marks = 95` assigns the value `95` to that variable.
+- `return` sends the current value of `marks` back to the caller.
+
+### Real-Life Analogy
+
+Imagine a teacher checking a student's marks. The answer is labelled `marks` before being handed back.
+
+### Remember
+
+Named return values give names to the values a function returns. A bare `return` returns the current values of the named return variables.
