@@ -239,3 +239,47 @@ Imagine a teacher checking a student's marks. The answer is labelled `marks` bef
 ### Remember
 
 Named return values give names to the values a function returns. A bare `return` returns the current values of the named return variables.
+## Variadic Functions
+
+### What is a Variadic Function?
+
+A variadic function can accept a variable number of arguments of the same type.
+
+### Example
+
+```go
+func greet(names ...string) {
+    fmt.Println(names)
+}
+```
+
+### How to Call It
+
+```go
+greet("Asmita")
+greet("Asmita", "Rahul")
+greet("Asmita", "Rahul", "Priya")
+```
+
+### Output
+
+```text
+[Asmita]
+[Asmita Rahul]
+[Asmita Rahul Priya]
+```
+
+### Understanding the Code
+
+- `greet` is the function name.
+- `names` is the parameter name.
+- `...string` means the function can receive a variable number of string arguments.
+- `fmt.Println(names)` prints all the names together.
+
+### Real-Life Analogy
+
+Imagine a basket that can hold one name, two names, or many names. The function can accept different numbers of names without needing a separate function for each case.
+
+### Remember
+
+The `...` before the type makes a parameter variadic. We will learn how to process each name individually when we study loops.
