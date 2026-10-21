@@ -73,3 +73,35 @@ Key points:
 - `else` runs when none of the conditions are true.
 - Go executes only the first matching block.
 
+## 3. Switch Statement
+
+A `switch` checks one value against multiple possible cases.
+
+Example: Checking a day number.
+
+```go
+day := 2
+
+switch day {
+case 1:
+    fmt.Println("Monday")
+case 2:
+    fmt.Println("Tuesday")
+case 3:
+    fmt.Println("Wednesday")
+default:
+    fmt.Println("Invalid day")
+}
+```
+
+Output:
+
+```text
+Tuesday
+```
+
+Key points:
+- `switch` checks the value.
+- `case` defines a possible match.
+- `default` runs if no case matches.
+- Go automatically stops after the matching case, so `break` is usually unnecessary.
