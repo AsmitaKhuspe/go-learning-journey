@@ -43,3 +43,33 @@ Remember:
 - `else` handles the alternative.
 - Conditions evaluate to `true` or `false`.
 - Go uses `{}` to enclose the code blocks.
+## 2. If, Else If, and Else
+
+Use `else if` when you need to check multiple conditions.
+
+Example: Checking exam marks.
+
+```go
+marks := 82
+
+if marks >= 90 {
+    fmt.Println("Excellent")
+} else if marks >= 75 {
+    fmt.Println("Good")
+} else {
+    fmt.Println("Keep practicing")
+}
+```
+
+Output:
+
+```text
+Good
+```
+
+Key points:
+- `if` checks the first condition.
+- `else if` checks another condition if the previous one is false.
+- `else` runs when none of the conditions are true.
+- Go executes only the first matching block.
+
