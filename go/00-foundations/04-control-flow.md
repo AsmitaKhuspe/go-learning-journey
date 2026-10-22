@@ -105,3 +105,32 @@ Key points:
 - `case` defines a possible match.
 - `default` runs if no case matches.
 - Go automatically stops after the matching case, so `break` is usually unnecessary.
+
+## 4. For Loop
+
+A `for` loop repeats a block of code while a condition is true.
+
+### Example
+
+```go
+for i := 1; i <= 5; i++ {
+    fmt.Println(i)
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+### Understanding the loop
+
+- `i := 1` — initializes the counter.
+- `i <= 5` — condition checked before each repetition.
+- `i++` — increases the counter by 1 after each repetition.
+- When the condition becomes false, the loop stops.
